@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Monducoin
+Comment=Monducoin P2P Cryptocurrency
+Comment[fr]=Monducoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Monducoin, eşten eşe kriptografik sanal para birimi
+Comment[es]=Monducoin, una criptomoneda P2P
+Exec=/usr/bin/monducoin-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/monducoin;
+Categories=Office;

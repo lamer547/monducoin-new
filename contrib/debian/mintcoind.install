@@ -1,0 +1,2 @@
+debian/bin/monducoind usr/bin
+src/monducoind usr/lib/monducoin
