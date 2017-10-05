@@ -51,7 +51,7 @@ static const int fHaveUPnP = true;
 static const int fHaveUPnP = false;
 #endif
 
-static const uint256 hashGenesisBlockOfficial("");
+static const uint256 hashGenesisBlockOfficial("00000f51496460fed050acc2a6fa83a0eff93163a6a17c0e792ad58685838659");
 static const uint256 hashGenesisBlockTestNet ("000005afea0b5c8a887d472d6ff0600ef83a383df12690768370208861615eaa");
 
 static const int64 nMaxClockDrift = 2 * 60 * 60;        // two hours
