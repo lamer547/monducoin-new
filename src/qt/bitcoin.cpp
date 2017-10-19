@@ -19,6 +19,7 @@
 #include <QTranslator>
 #include <QSplashScreen>
 #include <QLibraryInfo>
+#include <QFile>
 
 #if defined(BITCOIN_NEED_QT_PLUGINS) && !defined(_BITCOIN_QT_PLUGINS_INCLUDED)
 #define _BITCOIN_QT_PLUGINS_INCLUDED
@@ -138,6 +139,14 @@ int main(int argc, char *argv[])
                               QString("Error: Specified data directory \"%1\" does not exist.").arg(QString::fromStdString(mapArgs["-datadir"])));
         return 1;
     }
+
+    boost::filesystem::path configPath = GetDataDir(false) / "monducoin.conf";
+
+    if ( !boost::filesystem::exists( configPath ) )
+    {
+        QFile::copy(":/config/config" , QString::fromUtf8(configPath.string().c_str()));
+    }
+
     ReadConfigFile(mapArgs, mapMultiArgs);
 
     // Application identification (must be set before OptionsModel is initialized,

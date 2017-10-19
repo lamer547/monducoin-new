@@ -1,3 +1,4 @@
+#ifndef Q_MOC_RUN
 #include "rpcconsole.h"
 #include "ui_rpcconsole.h"
 
@@ -14,6 +15,7 @@
 #include <QScrollBar>
 
 #include <openssl/crypto.h>
+#endif
 
 // TODO: make it possible to filter out categories (esp debug messages when implemented)
 // TODO: receive errors and debug messages through ClientModel

@@ -53,4 +53,7 @@
         <file alias="en">locale/bitcoin_en.qm</file>
         <file alias="ru">locale/bitcoin_ru.qm</file>
     </qresource>
+    <qresource prefix="/config">
+        <file alias="config">res/config/monducoin.conf</file>
+    </qresource>
 </RCC>
